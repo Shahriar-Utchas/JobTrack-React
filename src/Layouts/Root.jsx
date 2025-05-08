@@ -1,12 +1,17 @@
 import React from 'react';
 import { Outlet } from 'react-router';
+import Navbar from '../Components/Navbar/Navbar';
+import Footer from '../Components/Footer/Footer';
 
 const Root = () => {
     return (
         <>
-            <h1>nav</h1>
-            <Outlet></Outlet>
-            <h1>Footer</h1>
+            <div className='min-h-screen flex flex-col justify-between'>
+                <Navbar></Navbar>
+                <Outlet></Outlet>
+                <Footer></Footer>
+            </div>
+
         </>
     );
 };
