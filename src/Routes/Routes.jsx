@@ -13,6 +13,8 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 Component: Home,
+                loader: () => fetch("companies.json"),
+                hydrateFallbackElement: <p>Loading, Please Wait....</p>,
             }
         ],
     },
