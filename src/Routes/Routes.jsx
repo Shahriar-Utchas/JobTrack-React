@@ -1,0 +1,19 @@
+import {
+    createBrowserRouter,
+} from "react-router";
+import Root from "../Layouts/Root";
+import Home from "../Pages/Home/Home";
+import ErrorPage from "../Components/ErrorPage/ErrorPage";
+export const router = createBrowserRouter([
+    {
+        path: "/",
+        Component: Root,
+        errorElement: <ErrorPage></ErrorPage>,
+        children: [
+            {
+                index: true,
+                Component: Home,
+            }
+        ],
+    },
+]);
