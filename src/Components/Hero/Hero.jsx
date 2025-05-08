@@ -15,17 +15,23 @@ const Hero = () => {
                         and take the next step in your career journey.
                     </p>
                     <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                        <Link to="/jobs" className="btn btn-primary">
+                        <Link
+                            to="/jobs"
+                            className="btn btn-primary transition-transform duration-300 hover:scale-105 hover:shadow-md"
+                        >
                             Browse Jobs
                         </Link>
-                        <Link to="/companies" className="btn btn-outline">
+                        <Link
+                            to="/companies"
+                            className="btn btn-outline transition-transform duration-300 hover:scale-105 hover:bg-blue-200 hover:text-blue-800 hover:border-blue-800"
+                        >
                             Explore Companies
                         </Link>
                     </div>
                 </div>
 
                 {/* Right Side Image */}
-                <div className="max-w-sm md:max-w-md lg:max-w-lg">
+                <div className="max-w-sm md:max-w-md lg:max-w-lg transition-transform duration-500 hover:scale-105">
                     <img
                         src="images/hero-image.svg"
                         alt="Job search illustration"

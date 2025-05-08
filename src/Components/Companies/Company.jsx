@@ -5,7 +5,9 @@ const Company = ({ company }) => {
     return (
         <Link
             to={`/company/${company.id}`}
-            className="block transform transition duration-300 hover:scale-105 hover:shadow-xl"
+            className="block transform transition duration-300 hover:scale-105 hover:shadow-xl hover:border border-blue-500 rounded-xl"
+
+
         >
             <div className="bg-white rounded-xl shadow-md p-6 text-center">
                 <img

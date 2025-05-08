@@ -41,9 +41,9 @@ const Navbar = () => {
             </div>
 
             {/* Navbar End (Auth Buttons) */}
-            <div className="navbar-end space-x-2 mx-10">
-                <Link to="/login" className="btn btn-outline  text-blue-700">Login</Link>
-                <Link to="/register" className="btn btn-primary ">Register</Link>
+            <div className="navbar-end space-x-4 mx-10">
+                <Link to="/login" className="btn btn-outline transition-transform duration-300 hover:scale-105 hover:bg-blue-200 hover:text-blue-800 hover:border-blue-800 ">Login</Link>
+                <Link to="/register" className="btn btn-primary transition-transform duration-300 hover:scale-105 hover:shadow-md">Register</Link>
             </div>
         </nav>
     );
