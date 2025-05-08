@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
+import { AuthContext } from '../../Provider/AuthContext';
 
 const Login = () => {
+    const { handleGoogleLogin } = use(AuthContext);
     const [formData, setFormData] = useState({ email: '', password: '' });
     const [showPassword, setShowPassword] = useState(false);
     const [passwordFocused, setPasswordFocused] = useState(false);
@@ -80,6 +82,7 @@ const Login = () => {
                 <div className="mt-6 space-y-3">
                     <button
                         className="flex items-center justify-center w-full gap-2 border border-gray-300 rounded-xl py-2 hover:bg-yellow-100 transition cursor-pointer"
+                        onClick={handleGoogleLogin}
                     >
                         <FcGoogle className="text-xl" />
                         <span className="text-sm font-medium text-gray-700">Sign in with Google</span>
