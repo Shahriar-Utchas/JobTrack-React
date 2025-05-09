@@ -26,7 +26,7 @@ const UpdateProfile = () => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-50">
+        <div className="flex items-center justify-center min-h-screen bg-gray-50 p-5">
             <form onSubmit={handleUpdate} className="bg-white p-8 rounded shadow-md w-full max-w-md">
                 <h2 className="text-2xl font-semibold text-center mb-6">Update Profile</h2>
 

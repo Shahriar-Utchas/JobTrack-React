@@ -117,12 +117,12 @@ const Registration = () => {
     }
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100 py-5">
+        <div className="min-h-screen flex items-center justify-center bg-gray-100 py-5 px-5">
             <Helmet>
                 <title>Registration</title>
             </Helmet>
             <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
-                <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Register for JobTrack</h2>
+                <h2 className="text-2xl font-bold text-center text-gray-800 mb-6 mx-auto">Register for JobTrack</h2>
                 <form onSubmit={handleSubmit} className="space-y-5">
                     <div>
                         <label className="block mb-1 text-sm font-medium text-gray-700">Full Name</label>
