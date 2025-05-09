@@ -57,6 +57,30 @@ const AuthProvider = ({ children }) => {
                 throw error;
             });
     };
+    const updateUserProfile = (name, photoURL) => {
+        SetLoading(true);
+        return updateProfile(auth.currentUser, {
+            displayName: name,
+            photoURL: photoURL
+        })
+            .then(() => {
+                // Update local user state too
+                const updatedUser = {
+                    ...auth.currentUser,
+                    displayName: name,
+                    photoURL: photoURL
+                };
+                SetUser(updatedUser);
+                SetLoading(false);
+                return true;
+            })
+            .catch((error) => {
+                SetLoading(false);
+                console.error('Error updating profile:', error);
+                throw error;
+            });
+    };
+
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -78,6 +102,7 @@ const AuthProvider = ({ children }) => {
         createUser,
         loginWithEmail,
         resetPassword,
+        updateUserProfile,
     };
     return (
         <AuthContext value={authData}>

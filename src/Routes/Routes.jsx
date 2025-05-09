@@ -12,6 +12,7 @@ import Companies from "../Components/Companies/Companies";
 import PrivateRoutes from "./PrivateRoutes";
 import ResetPassword from "../Pages/ResetPassword/ResetPassword";
 import MyProfile from "../Pages/Myprofile/MyProfile";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -61,6 +62,10 @@ export const router = createBrowserRouter([
             {
                 path: "/profile",
                 element: <PrivateRoutes><MyProfile></MyProfile></PrivateRoutes>,
+            },
+            {
+                path: "/update-profile",
+                element: <PrivateRoutes><UpdateProfile></UpdateProfile></PrivateRoutes>,
             }
         ],
     },
