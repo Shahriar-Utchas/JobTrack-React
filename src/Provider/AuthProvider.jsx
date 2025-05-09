@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AuthContext } from './AuthContext';
-import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, sendPasswordResetEmail, GithubAuthProvider } from "firebase/auth";
 import { auth } from '../Firebase/Firebase.init';
 
 const AuthProvider = ({ children }) => {
@@ -9,12 +9,14 @@ const AuthProvider = ({ children }) => {
 
     const createUser = (email, password, name) => {
         SetLoading(true);
+        const defaultPhotoURL = 'https://www.paralysistreatments.com/wp-content/uploads/2018/02/no_profile_img.png';
         return createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
 
                 return updateProfile(user, {
-                    displayName: name
+                    displayName: name,
+                    photoURL: defaultPhotoURL
                 }).then(() => {
                     SetUser({ ...user, displayName: name });
                     return true;
@@ -93,6 +95,13 @@ const AuthProvider = ({ children }) => {
         });
         return () => unsubscribe();
     }, []);
+
+    const GitHubProvider = new GithubAuthProvider();
+    const handleGitHubLogin = () => {
+        return signInWithPopup(auth, GitHubProvider);
+
+    }
+
     const authData = {
         user,
         loading,
@@ -103,6 +112,7 @@ const AuthProvider = ({ children }) => {
         loginWithEmail,
         resetPassword,
         updateUserProfile,
+        handleGitHubLogin,
     };
     return (
         <AuthContext value={authData}>

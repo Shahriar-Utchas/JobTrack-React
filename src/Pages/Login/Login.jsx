@@ -7,7 +7,7 @@ import { useLocation, useNavigate } from 'react-router';
 import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
-    const { handleGoogleLogin } = use(AuthContext);
+    const { handleGoogleLogin, handleGitHubLogin } = use(AuthContext);
     const { user, SetUser, loginWithEmail } = use(AuthContext);
     const [error, setError] = useState('');
     const navigate = useNavigate();
@@ -67,6 +67,16 @@ const Login = () => {
                 console.error('Error signing in with Google:', error);
             });
     };
+    const handleGithubLoginClick = () => {
+        handleGitHubLogin()
+            .then((result) => {
+                SetUser(result.user);
+                navigate(location?.state || '/');
+            })
+            .catch((error) => {
+                console.error('Error signing in with GitHub:', error);
+            });
+    }
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -155,6 +165,7 @@ const Login = () => {
                     </button>
                     <button
                         className="flex items-center justify-center w-full gap-2 border border-gray-300 rounded-xl py-2 transition duration-300 ease-in-out transform hover:bg-gray-200 hover:scale-105 hover:shadow-md active:scale-95 cursor-pointer"
+                        onClick={handleGithubLoginClick}
                     >
                         <FaGithub className="text-xl text-black" />
                         <span className="text-sm font-medium text-gray-700">Continue with GitHub</span>

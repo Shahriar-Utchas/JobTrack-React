@@ -164,22 +164,6 @@
           "Knowledge of HIPAA compliance",
           "Testing and deployment pipelines"
         ]
-      },
-      {
-        "id": "job-013",
-        "title": "Frontend Developer",
-        "bannerImage": "https://picsum.photos/seed/frontend/600/200",
-        "location": "Dhaka, Bangladesh",
-        "salary": "$75,000 - $95,000",
-        "jobType": "Full-time",
-        "description": "Design and implement the frontend of a new healthcare platform.",
-        "requirements": [
-          "Proficiency in React.js",
-          "Experience with responsive design",
-          "Knowledge of JavaScript, HTML5, and CSS3",
-          "Experience with Redux and state management",
-          "Good understanding of UI/UX principles"
-        ]
       }
     ]
   },
@@ -270,7 +254,7 @@
   {
     "id": "7",
     "name": "FinTech Solutions",
-    "logo": "https://companiesmarketcap.com/img/company-logos/256/FNTS.webp",
+    "logo": "https://companiesmarketcap.com/img/company-logos/256/ABT.webp",
     "location": "Rajshahi, Bangladesh",
     "website": "https://fintechsolutions.com",
     "industry": "FinTech",

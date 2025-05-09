@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet-async';
 
 
 const Registration = () => {
-    const { user, createUser, handleGoogleLogin } = use(AuthContext);
+    const { user, createUser, handleGoogleLogin, handleGitHubLogin } = use(AuthContext);
     const navigate = useNavigate();
     useEffect(() => {
         if (user) {
@@ -99,6 +99,16 @@ const Registration = () => {
                 console.error('Error signing in with Google:', error);
             });
     };
+    const handleGithubLoginClick = () => {
+        handleGitHubLogin()
+            .then((result) => {
+                SetUser(result.user);
+                navigate(location?.state || '/');
+            })
+            .catch((error) => {
+                console.error('Error signing in with GitHub:', error);
+            });
+    }
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100 py-5">
@@ -219,6 +229,7 @@ const Registration = () => {
                     </button>
                     <button
                         className="flex items-center justify-center w-full gap-2 border border-gray-300 rounded-xl py-2 transition duration-300 ease-in-out transform hover:bg-gray-200 hover:scale-105 hover:shadow-md active:scale-95 cursor-pointer"
+                        onClick={handleGithubLoginClick}
                     >
                         <FaGithub className="text-xl text-black" />
                         <span className="text-sm font-medium text-gray-700">Continue with GitHub</span>
