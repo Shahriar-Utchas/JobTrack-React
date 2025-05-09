@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
+import CompaniesDetails from "../Pages/CompaniesDetails/CompaniesDetails";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -15,7 +16,7 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 Component: Home,
-                loader: () => fetch("companies.json"),
+                loader: () => fetch("../companies.json"),
                 hydrateFallbackElement: <p>Loading, Please Wait....</p>,
             },
             {
@@ -25,6 +26,12 @@ export const router = createBrowserRouter([
             {
                 path: "/register",
                 Component: Registration,
+            },
+            {
+                path: "companies/:id",
+                loader: () => fetch("../companies.json"),
+                hydrateFallbackElement: <p>Loading, Please Wait....</p>,
+                Component: CompaniesDetails
             }
         ],
     },

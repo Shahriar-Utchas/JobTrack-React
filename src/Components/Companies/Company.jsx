@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const Company = ({ company }) => {
     return (
         <Link
-            to={`/company/${company.id}`}
+            to={`/companies/${company.id}`}
             className="block rounded-xl transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg border border-transparent hover:border-blue-500"
         >
             <div className="bg-white rounded-xl shadow-md p-6 text-center hover:bg-blue-50 transition-colors duration-500 ease-in-out">
