@@ -4,6 +4,7 @@ import { AuthContext } from '../../Provider/AuthContext';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router';
 import { FcGoogle } from 'react-icons/fc';
+import { Helmet } from 'react-helmet-async';
 
 
 const Registration = () => {
@@ -101,6 +102,9 @@ const Registration = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100 py-5">
+            <Helmet>
+                <title>Registration</title>
+            </Helmet>
             <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
                 <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Register for JobTrack</h2>
                 <form onSubmit={handleSubmit} className="space-y-5">

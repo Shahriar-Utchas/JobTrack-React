@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { FaExternalLinkAlt, FaTimes } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 const CompaniesDetails = () => {
     const { id } = useParams();
@@ -12,7 +13,11 @@ const CompaniesDetails = () => {
     }, []);
 
     return (
+
         <div className="max-w-6xl mx-auto px-4 py-8">
+            <Helmet>
+                <title>Companies</title>
+            </Helmet>
             {/* Company Card */}
             <div className="bg-white rounded-xl shadow p-6 flex flex-col md:flex-row items-center gap-6 border">
                 <img src={company.logo} alt={company.name} className="w-24 h-24 object-cover rounded-lg" />

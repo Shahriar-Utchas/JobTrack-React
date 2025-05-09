@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLoaderData } from 'react-router';
 import { FaTimes } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 const AllJobs = () => {
     const companies = useLoaderData();
@@ -18,6 +19,9 @@ const AllJobs = () => {
 
     return (
         <div className="p-6 bg-[#f5f9fc] min-h-screen">
+            <Helmet>
+                <title>Jobs</title>
+            </Helmet>
             <h2 className="text-3xl font-bold mb-6 text-center text-[#1e3358]">All Available Jobs</h2>
 
             {/* Job Grid */}

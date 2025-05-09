@@ -4,6 +4,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
 import { AuthContext } from '../../Provider/AuthContext';
 import { useLocation, useNavigate } from 'react-router';
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
     const { handleGoogleLogin } = use(AuthContext);
@@ -69,6 +70,9 @@ const Login = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
                 <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Login to JobTrack</h2>
                 <form onSubmit={handleSubmit} className="space-y-5">

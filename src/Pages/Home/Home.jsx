@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Hero from '../../Components/Hero/Hero';
 import Companies from '../../Components/Companies/Companies';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     const companiesRef = useRef(null);
@@ -21,6 +22,9 @@ const Home = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <Hero />
             <div ref={companiesRef}>
                 <Companies />
