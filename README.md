@@ -1,12 +1,64 @@
-# React + Vite
+# 💼 JobTrack - Job Listing & Exploration Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Site:** [https://your-live-site-link.com](https://your-live-site-link.com)  
 
-Currently, two official plugins are available:
+## 🧠 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**JobTrack** is a modern, responsive job listing platform tailored for job seekers to explore employment opportunities across various companies. It centralizes job listings, allowing users to browse jobs, view detailed descriptions, and apply directly to company websites. Built with a clean UI and intuitive UX, it ensures a seamless experience for all users.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Key Features
+
+- 🔐 **Firebase Authentication** (Email/Password + Google/GitHub Sign-In)
+- 👤 **User Profile & Update Info Feature**
+- 📑 **Company and Job Listings from JSON**
+- 💬 **Job Details Modal with Apply Button**
+- 📱 **Fully Responsive Design**
+- ❄️ **Unique Winter-themed UI Design**
+- 🔁 **404 & Additional Dynamic Routes**
+- 🎬 **Page Animations with Framer Motion**
+- 🌐 **Dynamic Page Titles**
+- 🔒 **Environment Variables Secured**
+
+---
+
+## 🖥 Pages & Functionality
+
+- **Home Page**
+  - Hero Section with Call-to-Action
+  - “How it Works” Section
+  - Company Listings Grid
+  - Two Additional Informational Sections
+
+- **Company Details**
+  - Company Info + Job Listings
+  - Modal View for Job Details
+  - Apply via External Link
+
+- **Authentication**
+  - Login & Registration with Validations
+  - Google Sign-In
+  - Forgot Password Page (redirect to Gmail)
+
+- **My Profile**
+  - Display & Update User Info (name + photo URL)
+
+- **404 Not Found Page**
+- **Dynamic Routing & Tabs**
+  
+---
+
+## 🛠️ Technologies Used
+
+- **React.js**
+- **React Router DOM**
+- **Firebase (Auth)**
+- **Tailwind CSS / DaisyUI**
+- **Framer Motion** (Animations)
+- **SweetAlert2** 
+
+---
+
+
+
