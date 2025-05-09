@@ -11,6 +11,7 @@ import AllJobs from "../Pages/AllJobs/AllJobs";
 import Companies from "../Components/Companies/Companies";
 import PrivateRoutes from "./PrivateRoutes";
 import ResetPassword from "../Pages/ResetPassword/ResetPassword";
+import MyProfile from "../Pages/Myprofile/MyProfile";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -56,6 +57,10 @@ export const router = createBrowserRouter([
                 path: "/reset-password",
                 Component: ResetPassword,
 
+            },
+            {
+                path: "/profile",
+                element: <PrivateRoutes><MyProfile></MyProfile></PrivateRoutes>,
             }
         ],
     },
