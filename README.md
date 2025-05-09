@@ -1,12 +1,11 @@
 # 💼 JobTrack - Job Listing & Exploration Platform
 
-**Live Site:** [https://your-live-site-link.com](https://your-live-site-link.com)  
+# Live Site: [Click here](https://jobtrack-by-utchas.netlify.app/)
+
 
 ## 🧠 About the Project
 
 **JobTrack** is a modern, responsive job listing platform tailored for job seekers to explore employment opportunities across various companies. It centralizes job listings, allowing users to browse jobs, view detailed descriptions, and apply directly to company websites. Built with a clean UI and intuitive UX, it ensures a seamless experience for all users.
-
----
 
 ## 🚀 Key Features
 
@@ -20,8 +19,6 @@
 - 🎬 **Page Animations with Framer Motion**
 - 🌐 **Dynamic Page Titles**
 - 🔒 **Environment Variables Secured**
-
----
 
 ## 🖥 Pages & Functionality
 
@@ -47,8 +44,6 @@
 - **404 Not Found Page**
 - **Dynamic Routing & Tabs**
   
----
-
 ## 🛠️ Technologies Used
 
 - **React.js**
@@ -57,8 +52,4 @@
 - **Tailwind CSS / DaisyUI**
 - **Framer Motion** (Animations)
 - **SweetAlert2** 
-
----
-
-
 
