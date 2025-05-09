@@ -5,8 +5,10 @@ import { auth } from '../Firebase/Firebase.init';
 
 const AuthProvider = ({ children }) => {
     const [user, SetUser] = useState(null);
+    const [loading, SetLoading] = useState(true);
 
     const createUser = (email, password, name) => {
+        SetLoading(true);
         return createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
@@ -24,6 +26,7 @@ const AuthProvider = ({ children }) => {
             });
     };
     const loginWithEmail = (email, password) => {
+        SetLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
     }
 
@@ -32,6 +35,7 @@ const AuthProvider = ({ children }) => {
         return signInWithPopup(auth, GoogleProvider);
     };
     const handleGoogleSignout = () => {
+        SetLoading(true);
         auth.signOut()
             .then(() => {
                 SetUser(null);
@@ -44,14 +48,17 @@ const AuthProvider = ({ children }) => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
                 SetUser(user);
+                SetLoading(false);
             } else {
                 SetUser(null);
+                SetLoading(false);
             }
         });
         return () => unsubscribe();
     }, []);
     const authData = {
         user,
+        loading,
         SetUser,
         handleGoogleLogin,
         handleGoogleSignout,

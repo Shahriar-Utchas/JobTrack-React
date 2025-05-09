@@ -3,17 +3,20 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
 import { AuthContext } from '../../Provider/AuthContext';
-import { useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 
 const Login = () => {
     const { handleGoogleLogin } = use(AuthContext);
     const { user, SetUser, loginWithEmail } = use(AuthContext);
     const [error, setError] = useState('');
     const navigate = useNavigate();
+    const location = useLocation();
+
+
 
     useEffect(() => {
         if (user) {
-            navigate('/');
+            navigate(location?.state || '/');
         }
     }, [user, navigate]);
 
@@ -31,7 +34,7 @@ const Login = () => {
             .then((userCredential) => {
                 const user = userCredential.user;
                 SetUser(user);
-                navigate('/');
+                navigate(location?.state || '/');
             })
             .catch((error) => {
                 let errorMessage = 'Login failed.';
@@ -57,7 +60,7 @@ const Login = () => {
         handleGoogleLogin()
             .then((result) => {
                 SetUser(result.user);
-                navigate('/');
+                navigate(location?.state || '/');
             })
             .catch((error) => {
                 console.error('Error signing in with Google:', error);

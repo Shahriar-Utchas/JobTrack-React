@@ -9,6 +9,7 @@ import Registration from "../Pages/Registration/Registration";
 import CompaniesDetails from "../Pages/CompaniesDetails/CompaniesDetails";
 import AllJobs from "../Pages/AllJobs/AllJobs";
 import Companies from "../Components/Companies/Companies";
+import PrivateRoutes from "./PrivateRoutes";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -33,17 +34,20 @@ export const router = createBrowserRouter([
                 path: "companies/:id",
                 loader: () => fetch("../companies.json"),
                 hydrateFallbackElement: <p>Loading, Please Wait....</p>,
-                Component: CompaniesDetails
+                // Component: CompaniesDetails
+                element: <PrivateRoutes><CompaniesDetails></CompaniesDetails></PrivateRoutes>
             },
             {
                 path: "/companies",
                 loader: () => fetch("../companies.json"),
                 hydrateFallbackElement: <p>Loading, Please Wait....</p>,
-                Component: Companies,
+                // Component: Companies,
+                element: <PrivateRoutes><Companies></Companies></PrivateRoutes>
             },
             {
                 path: "/jobs",
-                Component: AllJobs,
+                // Component: AllJobs,
+                element: <PrivateRoutes><AllJobs></AllJobs></PrivateRoutes>,
                 loader: () => fetch("../companies.json"),
                 hydrateFallbackElement: <p>Loading, Please Wait....</p>,
             }
