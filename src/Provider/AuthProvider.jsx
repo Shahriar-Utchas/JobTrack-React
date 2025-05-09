@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AuthContext } from './AuthContext';
-import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import { auth } from '../Firebase/Firebase.init';
 
 const AuthProvider = ({ children }) => {
@@ -44,6 +44,19 @@ const AuthProvider = ({ children }) => {
                 console.error('Error signing out:', error);
             });
     };
+    const resetPassword = (email) => {
+        SetLoading(true);
+        return sendPasswordResetEmail(auth, email)
+            .then(() => {
+                SetLoading(false);
+                return true; // Success
+            })
+            .catch((error) => {
+                SetLoading(false);
+                console.error('Error sending reset password email:', error);
+                throw error;
+            });
+    };
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -64,6 +77,7 @@ const AuthProvider = ({ children }) => {
         handleGoogleSignout,
         createUser,
         loginWithEmail,
+        resetPassword,
     };
     return (
         <AuthContext value={authData}>

@@ -118,6 +118,15 @@ const Login = () => {
                             )}
                         </div>
                     </div>
+                    <div className="flex justify-start">
+                        <a
+                            href={`/reset-password?email=${encodeURIComponent(formData.email)}`}
+                            className="text-sm text-red-500 hover:underline mb-2 block text-left"
+                        >
+                            Forgot password?
+                        </a>
+
+                    </div>
 
                     <button
                         type="submit"

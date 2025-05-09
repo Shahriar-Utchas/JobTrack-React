@@ -10,6 +10,7 @@ import CompaniesDetails from "../Pages/CompaniesDetails/CompaniesDetails";
 import AllJobs from "../Pages/AllJobs/AllJobs";
 import Companies from "../Components/Companies/Companies";
 import PrivateRoutes from "./PrivateRoutes";
+import ResetPassword from "../Pages/ResetPassword/ResetPassword";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -50,6 +51,11 @@ export const router = createBrowserRouter([
                 element: <PrivateRoutes><AllJobs></AllJobs></PrivateRoutes>,
                 loader: () => fetch("../companies.json"),
                 hydrateFallbackElement: <p>Loading, Please Wait....</p>,
+            },
+            {
+                path: "/reset-password",
+                Component: ResetPassword,
+
             }
         ],
     },
