@@ -29,9 +29,9 @@ const ResetPassword = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <div className="min-h-screen flex items-center justify-center bg-gray-100 p-5">
             <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
-                <h2 className="text-xl font-bold mb-4 text-center text-gray-700">Reset Your Password</h2>
+                <h2 className="text-xl font-bold mb-4 text-center text-gray-700 mx-auto">Reset Your Password</h2>
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <input
                         type="email"
