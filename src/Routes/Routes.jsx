@@ -3,7 +3,6 @@ import {
 } from "react-router";
 import Root from "../Layouts/Root";
 import Home from "../Pages/Home/Home";
-import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
 import CompaniesDetails from "../Pages/CompaniesDetails/CompaniesDetails";
@@ -13,11 +12,12 @@ import PrivateRoutes from "./PrivateRoutes";
 import ResetPassword from "../Pages/ResetPassword/ResetPassword";
 import MyProfile from "../Pages/Myprofile/MyProfile";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 export const router = createBrowserRouter([
     {
         path: "/",
         Component: Root,
-        // errorElement: <ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 index: true,
@@ -66,7 +66,8 @@ export const router = createBrowserRouter([
             {
                 path: "/update-profile",
                 element: <PrivateRoutes><UpdateProfile></UpdateProfile></PrivateRoutes>,
-            }
+            },
+            
         ],
     },
 ]);

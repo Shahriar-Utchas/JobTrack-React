@@ -3,7 +3,7 @@
     "id": "1",
     "name": "TechNova Inc.",
     "logo": "https://companiesmarketcap.com/img/company-logos/256/GE.webp",
-    "location": "San Francisco, CA",
+    "location": "Dhaka, Bangladesh",
     "website": "https://technova.com",
     "industry": "Software Development",
     "jobs": [
@@ -23,12 +23,11 @@
           "Responsive design experience"
         ]
       },
-      
       {
         "id": "job-011",
         "title": "Backend Developer",
         "bannerImage": "https://picsum.photos/seed/backend/600/200",
-        "location": "San Francisco, CA",
+        "location": "Dhaka, Bangladesh",
         "salary": "$85,000 - $110,000",
         "jobType": "Full-time",
         "description": "Develop robust backend systems to support the company's frontend applications.",
@@ -39,14 +38,30 @@
           "Experience with Docker and Kubernetes",
           "Strong debugging and problem-solving skills"
         ]
+      },
+      {
+        "id": "job-014",
+        "title": "Full Stack Developer",
+        "bannerImage": "https://picsum.photos/seed/fullstack/600/200",
+        "location": "Remote",
+        "salary": "$95,000 - $120,000",
+        "jobType": "Full-time",
+        "description": "We are looking for a Full Stack Developer with experience in both frontend and backend technologies.",
+        "requirements": [
+          "Proficient in JavaScript (React, Node.js)",
+          "Experience with databases (MongoDB, SQL)",
+          "Familiar with Agile practices",
+          "Experience with CI/CD pipelines",
+          "Problem-solving and teamwork skills"
+        ]
       }
     ]
   },
   {
-    "id": "6",
+    "id": "2",
     "name": "AutoFlow",
     "logo": "https://companiesmarketcap.com/img/company-logos/256/IBE.MC.webp",
-    "location": "Detroit, MI",
+    "location": "Chittagong, Bangladesh",
     "website": "https://autoflow.tech",
     "industry": "Automotive Software",
     "jobs": [
@@ -54,7 +69,7 @@
         "id": "job-006",
         "title": "QA Engineer",
         "bannerImage": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-        "location": "Detroit, MI",
+        "location": "Chittagong, Bangladesh",
         "salary": "$60,000 - $75,000",
         "jobType": "Full-time",
         "description": "Test and ensure the quality of software used in next-gen vehicles.",
@@ -65,14 +80,30 @@
           "Strong documentation skills",
           "Understanding of automotive systems"
         ]
+      },
+      {
+        "id": "job-015",
+        "title": "DevOps Engineer",
+        "bannerImage": "https://picsum.photos/seed/devops/600/200",
+        "location": "Chittagong, Bangladesh",
+        "salary": "$80,000 - $100,000",
+        "jobType": "Full-time",
+        "description": "Manage the deployment, monitoring, and scaling of infrastructure for the automotive platform.",
+        "requirements": [
+          "Experience with AWS, Azure, or GCP",
+          "Familiarity with Terraform and Jenkins",
+          "Knowledge of Docker and Kubernetes",
+          "Strong scripting skills",
+          "Ability to troubleshoot complex systems"
+        ]
       }
     ]
   },
   {
-    "id": "2",
+    "id": "3",
     "name": "Prosus Corp.",
     "logo": "https://companiesmarketcap.com/img/company-logos/256/PRX.AS.webp",
-    "location": "Austin, TX",
+    "location": "Sylhet, Bangladesh",
     "website": "https://greenleaf.io",
     "industry": "Environmental Technology",
     "jobs": [
@@ -80,7 +111,7 @@
         "id": "job-002",
         "title": "Data Analyst",
         "bannerImage": "https://picsum.photos/seed/dataanalyst/600/200",
-        "location": "Austin, TX",
+        "location": "Sylhet, Bangladesh",
         "salary": "$65,000 - $80,000",
         "jobType": "Full-time",
         "description": "Analyze environmental data to support green initiatives and sustainability strategies.",
@@ -96,7 +127,7 @@
         "id": "job-012",
         "title": "Environmental Engineer",
         "bannerImage": "https://picsum.photos/seed/environment/600/200",
-        "location": "Austin, TX",
+        "location": "Sylhet, Bangladesh",
         "salary": "$70,000 - $90,000",
         "jobType": "Full-time",
         "description": "Design and implement sustainable solutions for environmental issues.",
@@ -111,10 +142,10 @@
     ]
   },
   {
-    "id": "3",
+    "id": "4",
     "name": "HealthSphere",
     "logo": "https://companiesmarketcap.com/img/company-logos/256/0857.HK.webp",
-    "location": "Seattle, WA",
+    "location": "Dhaka, Bangladesh",
     "website": "https://healthsphere.com",
     "industry": "Healthcare Tech",
     "jobs": [
@@ -138,7 +169,7 @@
         "id": "job-013",
         "title": "Frontend Developer",
         "bannerImage": "https://picsum.photos/seed/frontend/600/200",
-        "location": "Seattle, WA",
+        "location": "Dhaka, Bangladesh",
         "salary": "$75,000 - $95,000",
         "jobType": "Full-time",
         "description": "Design and implement the frontend of a new healthcare platform.",
@@ -153,10 +184,10 @@
     ]
   },
   {
-    "id": "4",
+    "id": "5",
     "name": "Pfizer Solutions",
     "logo": "https://companiesmarketcap.com/img/company-logos/256/PFE.webp",
-    "location": "New York, NY",
+    "location": "Dhaka, Bangladesh",
     "website": "https://finixsolutions.com",
     "industry": "Fintech",
     "jobs": [
@@ -164,7 +195,7 @@
         "id": "job-004",
         "title": "Product Manager",
         "bannerImage": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-        "location": "New York, NY",
+        "location": "Dhaka, Bangladesh",
         "salary": "$90,000 - $120,000",
         "jobType": "Full-time",
         "description": "Lead the development and launch of new financial tools for small businesses.",
@@ -175,14 +206,30 @@
           "Market analysis experience",
           "Technical background preferred"
         ]
+      },
+      {
+        "id": "job-016",
+        "title": "Financial Analyst",
+        "bannerImage": "https://picsum.photos/seed/finance/600/200",
+        "location": "Dhaka, Bangladesh",
+        "salary": "$70,000 - $90,000",
+        "jobType": "Full-time",
+        "description": "Analyze financial data to provide insights for business decisions.",
+        "requirements": [
+          "Proficiency in Excel and financial modeling",
+          "Experience with financial reporting",
+          "Strong analytical skills",
+          "Attention to detail",
+          "Communication skills"
+        ]
       }
     ]
   },
   {
-    "id": "5",
+    "id": "6",
     "name": "EduWise",
     "logo": "https://companiesmarketcap.com/img/company-logos/256/ETN.webp",
-    "location": "Denver, CO",
+    "location": "Dhaka, Bangladesh",
     "website": "https://eduwise.org",
     "industry": "EdTech",
     "jobs": [
@@ -200,6 +247,171 @@
           "SEO knowledge is a plus",
           "Deadline-oriented",
           "Ability to explain complex topics clearly"
+        ]
+      },
+      {
+        "id": "job-017",
+        "title": "Course Coordinator",
+        "bannerImage": "https://picsum.photos/seed/coordinator/600/200",
+        "location": "Dhaka, Bangladesh",
+        "salary": "$50,000 - $70,000",
+        "jobType": "Full-time",
+        "description": "Coordinate and manage the development of online courses.",
+        "requirements": [
+          "Strong organizational skills",
+          "Experience in content management",
+          "Familiarity with Learning Management Systems",
+          "Good communication skills",
+          "Attention to detail"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "FinTech Solutions",
+    "logo": "https://companiesmarketcap.com/img/company-logos/256/FNTS.webp",
+    "location": "Rajshahi, Bangladesh",
+    "website": "https://fintechsolutions.com",
+    "industry": "FinTech",
+    "jobs": [
+      {
+        "id": "job-018",
+        "title": "Software Engineer",
+        "bannerImage": "https://picsum.photos/seed/fintech/600/200",
+        "location": "Rajshahi, Bangladesh",
+        "salary": "$80,000 - $110,000",
+        "jobType": "Full-time",
+        "description": "Build innovative software solutions for the financial services industry.",
+        "requirements": [
+          "Experience with Java or Python",
+          "Strong knowledge of databases (SQL/NoSQL)",
+          "Familiarity with APIs and microservices",
+          "Agile development experience",
+          "Problem-solving skills"
+        ]
+      },
+      {
+        "id": "job-019",
+        "title": "UX/UI Designer",
+        "bannerImage": "https://picsum.photos/seed/design/600/200",
+        "location": "Rajshahi, Bangladesh",
+        "salary": "$60,000 - $85,000",
+        "jobType": "Full-time",
+        "description": "Design user-friendly and aesthetically pleasing interfaces for our fintech platform.",
+        "requirements": [
+          "Proficiency in Figma and Adobe XD",
+          "Experience with user-centered design principles",
+          "Strong portfolio",
+          "Attention to detail",
+          "Collaboration with developers"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "RetailSolutions",
+    "logo": "https://companiesmarketcap.com/img/company-logos/256/BBWI.webp",
+    "location": "Rajshahi, Bangladesh",
+    "website": "https://retailsolutions.com",
+    "industry": "Retail Tech",
+    "jobs": [
+      {
+        "id": "job-020",
+        "title": "E-commerce Specialist",
+        "bannerImage": "https://picsum.photos/seed/ecommerce/600/200",
+        "location": "Rajshahi, Bangladesh",
+        "salary": "$60,000 - $85,000",
+        "jobType": "Full-time",
+        "description": "Oversee the management of our online store, optimizing sales and user experience.",
+        "requirements": [
+          "Experience with e-commerce platforms like Shopify or WooCommerce",
+          "Understanding of digital marketing",
+          "Strong analytical skills",
+          "Experience with Google Analytics",
+          "Customer service experience"
+        ]
+      },
+      {
+        "id": "job-021",
+        "title": "Retail Manager",
+        "bannerImage": "https://picsum.photos/seed/manager/600/200",
+        "location": "Rajshahi, Bangladesh",
+        "salary": "$50,000 - $70,000",
+        "jobType": "Full-time",
+        "description": "Manage day-to-day operations of the retail store and lead the sales team.",
+        "requirements": [
+          "Retail management experience",
+          "Leadership skills",
+          "Customer-focused",
+          "Good communication skills",
+          "Ability to handle inventory"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "AI Innovations",
+    "logo": "https://companiesmarketcap.com/img/company-logos/256/TSLA.webp",
+    "location": "Khulna, Bangladesh",
+    "website": "https://aiinnovations.com",
+    "industry": "AI and ML",
+    "jobs": [
+      {
+        "id": "job-022",
+        "title": "Machine Learning Engineer",
+        "bannerImage": "https://picsum.photos/seed/ml/600/200",
+        "location": "Khulna, Bangladesh",
+        "salary": "$90,000 - $120,000",
+        "jobType": "Full-time",
+        "description": "Develop and implement machine learning models to solve real-world problems.",
+        "requirements": [
+          "Proficiency in Python and ML frameworks like TensorFlow or PyTorch",
+          "Experience with supervised and unsupervised learning",
+          "Strong background in statistics and data science",
+          "Experience with model deployment"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "StartupX",
+    "logo": "https://companiesmarketcap.com/img/company-logos/256/NVDA.webp",
+    "location": "Khulna, Bangladesh",
+    "website": "https://startupx.com",
+    "industry": "Startups and Innovation",
+    "jobs": [
+      {
+        "id": "job-023",
+        "title": "Product Designer",
+        "bannerImage": "https://picsum.photos/seed/productdesigner/600/200",
+        "location": "Khulna, Bangladesh",
+        "salary": "$60,000 - $80,000",
+        "jobType": "Full-time",
+        "description": "Design intuitive and user-friendly products for the startup ecosystem.",
+        "requirements": [
+          "Proficiency in design tools (Sketch, Figma)",
+          "Strong understanding of UI/UX principles",
+          "Experience with prototyping",
+          "Portfolio showcasing design projects"
+        ]
+      },
+      {
+        "id": "job-024",
+        "title": "Marketing Specialist",
+        "bannerImage": "https://picsum.photos/seed/marketing/600/200",
+        "location": "Khulna, Bangladesh",
+        "salary": "$50,000 - $70,000",
+        "jobType": "Full-time",
+        "description": "Develop and execute marketing strategies to promote our products.",
+        "requirements": [
+          "Experience with digital marketing",
+          "Familiarity with social media platforms",
+          "Good writing skills",
+          "Strong analytical and research skills"
         ]
       }
     ]
