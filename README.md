@@ -1,6 +1,6 @@
 # 💼 JobTrack - Job Listing & Exploration Platform
 
-# Live Site: [Click here](https://jobtrack-by-utchas.netlify.app/)
+## Live Site: [Click here](https://jobtrack-by-utchas.netlify.app/)
 
 
 ## 🧠 About the Project
