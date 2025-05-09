@@ -7,6 +7,8 @@ import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
 import CompaniesDetails from "../Pages/CompaniesDetails/CompaniesDetails";
+import AllJobs from "../Pages/AllJobs/AllJobs";
+import Companies from "../Components/Companies/Companies";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -32,6 +34,18 @@ export const router = createBrowserRouter([
                 loader: () => fetch("../companies.json"),
                 hydrateFallbackElement: <p>Loading, Please Wait....</p>,
                 Component: CompaniesDetails
+            },
+            {
+                path: "/companies",
+                loader: () => fetch("../companies.json"),
+                hydrateFallbackElement: <p>Loading, Please Wait....</p>,
+                Component: Companies,
+            },
+            {
+                path: "/jobs",
+                Component: AllJobs,
+                loader: () => fetch("../companies.json"),
+                hydrateFallbackElement: <p>Loading, Please Wait....</p>,
             }
         ],
     },

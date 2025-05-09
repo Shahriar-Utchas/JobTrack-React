@@ -63,7 +63,7 @@ const CompaniesDetails = () => {
                     <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl p-6 border border-gray-200 scale-95 animate-fade-in">
                         {/* Close Button */}
                         <button
-                            className="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition-colors"
+                            className="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition-all duration-200 hover:scale-110 active:scale-95 cursor-pointer"
                             onClick={() => setSelectedJob(null)}
                         >
                             <FaTimes size={20} />

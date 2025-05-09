@@ -23,7 +23,12 @@ const Navbar = () => {
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/companies">Companies</Link></li>
+                        <li>
+                            <button onClick={() => { window.scrollToCompanies?.(); closeDropdown(); }} className="text-left w-full">
+                                Companies
+                            </button>
+                        </li>
+
                         <li><Link to="/jobs">All Jobs</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                     </ul>
@@ -43,8 +48,38 @@ const Navbar = () => {
             {/* Navbar Center (Visible on large screens) */}
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-base font-medium">
-                    <li><NavLink to="/" className={getLinkClass}>Home</NavLink></li>
-                    <li><NavLink to="/companies" className={getLinkClass}>Companies</NavLink></li>
+                    <li>
+                        <NavLink
+                            to="/"
+                            className={getLinkClass}
+                            onClick={(e) => {
+                                if (window.location.pathname === '/') {
+                                    e.preventDefault(); // prevent re-navigating
+                                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                                }
+                            }}
+                        >
+                            Home
+                        </NavLink>
+
+                    </li>
+
+                    <li>
+                        <NavLink
+                            to="/companies"
+                            className={getLinkClass}
+                            onClick={(e) => {
+                                if (window.location.pathname === '/') {
+                                    e.preventDefault();
+                                    window.scrollToCompanies?.();
+                                }
+                            }}
+                        >
+                            Companies
+                        </NavLink>
+
+                    </li>
+
                     <li><NavLink to="/jobs" className={getLinkClass}>Jobs</NavLink></li>
                     <li><NavLink to="/about" className={getLinkClass}>About Us</NavLink></li>
                 </ul>
