@@ -1,11 +1,22 @@
-import React, { use, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
 import { AuthContext } from '../../Provider/AuthContext';
+import { useNavigate } from 'react-router';
 
 const Login = () => {
     const { handleGoogleLogin } = use(AuthContext);
+    const { user, SetUser, loginWithEmail } = use(AuthContext);
+    const [error, setError] = useState('');
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (user) {
+            navigate('/');
+        }
+    }, [user, navigate]);
+
     const [formData, setFormData] = useState({ email: '', password: '' });
     const [showPassword, setShowPassword] = useState(false);
     const [passwordFocused, setPasswordFocused] = useState(false);
@@ -16,7 +27,41 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Logging in with:', formData);
+        loginWithEmail(formData.email, formData.password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                SetUser(user);
+                navigate('/');
+            })
+            .catch((error) => {
+                let errorMessage = 'Login failed.';
+                // Handle different error codes and set appropriate error messages
+                switch (error.code) {
+                    case 'auth/invalid-credential':
+                        errorMessage = 'Invalid Email/password. Please try again.';
+                        break;
+                    case 'auth/user-not-found':
+                        errorMessage = 'No user found with this email.';
+                        break;
+                    case 'auth/invalid-email':
+                        errorMessage = 'Invalid email address.';
+                        break;
+                    default:
+                        errorMessage = error.code;
+                }
+
+                setError(errorMessage);  // Set the error message to state
+            });
+    };
+    const handleGoogleLoginClick = () => {
+        handleGoogleLogin()
+            .then((result) => {
+                SetUser(result.user);
+                navigate('/');
+            })
+            .catch((error) => {
+                console.error('Error signing in with Google:', error);
+            });
     };
 
     return (
@@ -69,11 +114,16 @@ const Login = () => {
 
                     <button
                         type="submit"
-                        className="w-full bg-blue-600 text-white font-semibold py-2 rounded-xl hover:bg-blue-700 transition duration-200 cursor-pointer"
+                        className="w-full bg-blue-600 text-white font-semibold py-2 rounded-xl transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 hover:shadow-lg active:scale-95 cursor-pointer"
                     >
                         Login
                     </button>
                 </form>
+                {error && (
+                    <p className="text-red-500 text-sm text-center mt-3">
+                        {error}  {/* Display the error message below the form */}
+                    </p>
+                )}
 
                 <p className="text-sm text-center text-gray-500 mt-4">
                     Don't have an account? <a href="/register" className="text-blue-600 hover:underline">Register now</a>
@@ -81,17 +131,17 @@ const Login = () => {
 
                 <div className="mt-6 space-y-3">
                     <button
-                        className="flex items-center justify-center w-full gap-2 border border-gray-300 rounded-xl py-2 hover:bg-yellow-100 transition cursor-pointer"
-                        onClick={handleGoogleLogin}
+                        className="flex items-center justify-center w-full gap-2 border border-gray-300 rounded-xl py-2 transition duration-300 ease-in-out transform hover:bg-yellow-100 hover:scale-105 hover:shadow-md active:scale-95 cursor-pointer"
+                        onClick={handleGoogleLoginClick}
                     >
                         <FcGoogle className="text-xl" />
-                        <span className="text-sm font-medium text-gray-700">Sign in with Google</span>
+                        <span className="text-sm font-medium text-gray-700">Continue with Google</span>
                     </button>
                     <button
-                        className="flex items-center justify-center w-full gap-2 border border-gray-300 rounded-xl py-2 hover:bg-gray-200 transition cursor-pointer"
+                        className="flex items-center justify-center w-full gap-2 border border-gray-300 rounded-xl py-2 transition duration-300 ease-in-out transform hover:bg-gray-200 hover:scale-105 hover:shadow-md active:scale-95 cursor-pointer"
                     >
                         <FaGithub className="text-xl text-black" />
-                        <span className="text-sm font-medium text-gray-700">Sign in with GitHub</span>
+                        <span className="text-sm font-medium text-gray-700">Continue with GitHub</span>
                     </button>
                 </div>
             </div>

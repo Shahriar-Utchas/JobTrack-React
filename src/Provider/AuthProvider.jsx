@@ -1,20 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import { AuthContext } from './AuthContext';
-import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../Firebase/Firebase.init';
 
 const AuthProvider = ({ children }) => {
     const [user, SetUser] = useState(null);
 
-    const GoogleProvider = new GoogleAuthProvider();
-    const handleGoogleLogin = () => {
-        signInWithPopup(auth, GoogleProvider)
-            .then((result) => {
-                SetUser(result.user);
+    const createUser = (email, password, name) => {
+        return createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+
+                return updateProfile(user, {
+                    displayName: name
+                }).then(() => {
+                    SetUser({ ...user, displayName: name });
+                    return true;
+                });
             })
             .catch((error) => {
-                console.error('Error signing in with Google:', error);
+                console.error('Error creating user:', error);
+                throw error;
             });
+    };
+    const loginWithEmail = (email, password) => {
+        return signInWithEmailAndPassword(auth, email, password);
+    }
+
+    const GoogleProvider = new GoogleAuthProvider();
+    const handleGoogleLogin = () => {
+        return signInWithPopup(auth, GoogleProvider);
     };
     const handleGoogleSignout = () => {
         auth.signOut()
@@ -39,7 +54,9 @@ const AuthProvider = ({ children }) => {
         user,
         SetUser,
         handleGoogleLogin,
-        handleGoogleSignout
+        handleGoogleSignout,
+        createUser,
+        loginWithEmail,
     };
     return (
         <AuthContext value={authData}>

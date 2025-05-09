@@ -1,279 +1,207 @@
 [
-    {
-      "id": "1",
-      "name": "TechNova Inc.",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-      "location": "San Francisco, CA",
-      "website": "https://technova.com",
-      "industry": "Software Development",
-      "jobs": [
-        {
-          "id": "job-001",
-          "title": "Frontend Developer",
-          "bannerImage": "https://picsum.photos/seed/frontend/600/200",
-          "location": "Remote",
-          "salary": "$70,000 - $90,000",
-          "jobType": "Full-time",
-          "description": "We’re looking for a passionate frontend developer to build intuitive user interfaces.",
-          "requirements": [
-            "Proficient in HTML, CSS, and JavaScript",
-            "Experience with React",
-            "Knowledge of RESTful APIs",
-            "Familiarity with Git",
-            "Responsive design experience"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "name": "GreenLeaf Corp.",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-      "location": "Austin, TX",
-      "website": "https://greenleaf.io",
-      "industry": "Environmental Technology",
-      "jobs": [
-        {
-          "id": "job-002",
-          "title": "Data Analyst",
-          "bannerImage": "https://picsum.photos/seed/dataanalyst/600/200",
-          "location": "Austin, TX",
-          "salary": "$65,000 - $80,000",
-          "jobType": "Full-time",
-          "description": "Analyze environmental data to support green initiatives and sustainability strategies.",
-          "requirements": [
-            "Strong Excel and SQL skills",
-            "Experience with data visualization tools",
-            "Understanding of statistical models",
-            "Attention to detail",
-            "Strong analytical skills"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "name": "HealthSphere",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-      "location": "Seattle, WA",
-      "website": "https://healthsphere.com",
-      "industry": "Healthcare Tech",
-      "jobs": [
-        {
-          "id": "job-003",
-          "title": "Backend Developer",
-          "bannerImage": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-          "location": "Remote",
-          "salary": "$85,000 - $110,000",
-          "jobType": "Full-time",
-          "description": "Develop secure and scalable APIs for our health monitoring platform.",
-          "requirements": [
-            "Experience with Node.js and Express",
-            "Familiarity with MongoDB and PostgreSQL",
-            "RESTful API design",
-            "Knowledge of HIPAA compliance",
-            "Testing and deployment pipelines"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "name": "Finix Solutions",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-      "location": "New York, NY",
-      "website": "https://finixsolutions.com",
-      "industry": "Fintech",
-      "jobs": [
-        {
-          "id": "job-004",
-          "title": "Product Manager",
-          "bannerImage": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-          "location": "New York, NY",
-          "salary": "$90,000 - $120,000",
-          "jobType": "Full-time",
-          "description": "Lead the development and launch of new financial tools for small businesses.",
-          "requirements": [
-            "3+ years in product management",
-            "Experience with agile methodologies",
-            "Strong communication skills",
-            "Market analysis experience",
-            "Technical background preferred"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "name": "EduWise",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-      "location": "Denver, CO",
-      "website": "https://eduwise.org",
-      "industry": "EdTech",
-      "jobs": [
-        {
-          "id": "job-005",
-          "title": "Content Writer",
-          "bannerImage": "https://picsum.photos/seed/contentwriter/600/200",
-          "location": "Remote",
-          "salary": "$45,000 - $60,000",
-          "jobType": "Part-time",
-          "description": "Create high-quality learning content for online courses and study material.",
-          "requirements": [
-            "Excellent written communication",
-            "Background in education or training",
-            "SEO knowledge is a plus",
-            "Deadline-oriented",
-            "Ability to explain complex topics clearly"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "6",
-      "name": "AutoFlow",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-      "location": "Detroit, MI",
-      "website": "https://autoflow.tech",
-      "industry": "Automotive Software",
-      "jobs": [
-        {
-          "id": "job-006",
-          "title": "QA Engineer",
-          "bannerImage": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-          "location": "Detroit, MI",
-          "salary": "$60,000 - $75,000",
-          "jobType": "Full-time",
-          "description": "Test and ensure the quality of software used in next-gen vehicles.",
-          "requirements": [
-            "Experience in automated testing",
-            "Familiarity with Selenium or Cypress",
-            "Bug tracking tools knowledge",
-            "Strong documentation skills",
-            "Understanding of automotive systems"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "7",
-      "name": "CyberWave",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-      "location": "Boston, MA",
-      "website": "https://cyberwave.io",
-      "industry": "Cybersecurity",
-      "jobs": [
-        {
-          "id": "job-007",
-          "title": "Cybersecurity Analyst",
-          "bannerImage": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-          "location": "Boston, MA",
-          "salary": "$95,000 - $115,000",
-          "jobType": "Full-time",
-          "description": "Monitor and protect our systems from cyber threats and vulnerabilities.",
-          "requirements": [
-            "Experience with security information and event management (SIEM) tools",
-            "Knowledge of network protocols and security",
-            "Ability to analyze security logs",
-            "Familiarity with compliance standards",
-            "Strong problem-solving skills"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "8",
-      "name": "AgriTech Solutions",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-      "location": "Des Moines, IA",
-      "website": "https://agritechsolutions.com",
-      "industry": "Agricultural Technology",
-      "jobs": [
-        {
-          "id": "job-008",
-          "title": "Agricultural Engineer",
-          "bannerImage": "https://picsum.photos/seed/agriculture/600/200",
-          "location": "Des Moines, IA",
-          "salary": "$70,000 - $85,000",
-          "jobType": "Full-time",
-          "description": "Design and develop agricultural machinery and equipment.",
-          "requirements": [
-            "Degree in Agricultural Engineering",
-            "Experience with CAD software",
-            "Knowledge of farming processes",
-            "Problem-solving abilities",
-            "Project management skills"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "9",
-      "name": "MediCare Plus",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-      "location": "Chicago, IL",
-      "website": "https://medicareplus.com",
-      "industry": "Healthcare Services",
-      "jobs": [
-        {
-          "id": "job-009",
-          "title": "Registered Nurse",
-          "bannerImage": "https://picsum.photos/seed/nurse/600/200",
-          "location": "Chicago, IL",
-          "salary": "$60,000 - $80,000",
-          "jobType": "Full-time",
-          "description": "Provide patient care and support in a hospital setting.",
-          "requirements": [
-            "Valid RN license",
-            "Experience in clinical settings",
-            "Strong communication skills",
-            "Ability to work in a team",
-            "Compassionate patient care"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "10",
-      "name": "EcoBuild",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
-      "location": "Portland, OR",
-      "website": "https://ecobuild.com",
-      "industry": "Sustainable Construction",
-      "jobs": [
-        {
-          "id": "job-010",
-          "title": "Project Architect",
-          "bannerImage": "https://picsum.photos/seed/architect/600/200",
-          "location": "Portland, OR",
-          "salary": "$80,000 - $100,000",
-          "jobType": "Full-time",
-          "description": "Lead sustainable building projects from design to completion.",
-          "requirements": [
-            "Licensed architect",
-            "Experience with green building standards",
-            "Proficiency in design software",
-            "Strong leadership skills",
-            "Attention to detail"
-          ]
-        },
-        {
-            "id": "job-010",
-            "title": "Project Architect",
-            "bannerImage": "https://picsum.photos/seed/architect/600/200",
-            "location": "Portland, OR",
-            "salary": "$80,000 - $100,000",
-            "jobType": "Full-time",
-            "description": "Lead sustainable building projects from design to completion.",
-            "requirements": [
-              "Licensed architect",
-              "Experience with green building standards",
-              "Proficiency in design software",
-              "Strong leadership skills",
-              "Attention to detail"
-            ]
-          }
-      ]
-    }
-  ]
-  
+  {
+    "id": "1",
+    "name": "TechNova Inc.",
+    "logo": "https://companiesmarketcap.com/img/company-logos/256/GE.webp",
+    "location": "San Francisco, CA",
+    "website": "https://technova.com",
+    "industry": "Software Development",
+    "jobs": [
+      {
+        "id": "job-001",
+        "title": "Frontend Developer",
+        "bannerImage": "https://picsum.photos/seed/frontend/600/200",
+        "location": "Remote",
+        "salary": "$70,000 - $90,000",
+        "jobType": "Full-time",
+        "description": "We’re looking for a passionate frontend developer to build intuitive user interfaces.",
+        "requirements": [
+          "Proficient in HTML, CSS, and JavaScript",
+          "Experience with React",
+          "Knowledge of RESTful APIs",
+          "Familiarity with Git",
+          "Responsive design experience"
+        ]
+      },
+      
+      {
+        "id": "job-011",
+        "title": "Backend Developer",
+        "bannerImage": "https://picsum.photos/seed/backend/600/200",
+        "location": "San Francisco, CA",
+        "salary": "$85,000 - $110,000",
+        "jobType": "Full-time",
+        "description": "Develop robust backend systems to support the company's frontend applications.",
+        "requirements": [
+          "Experience with Node.js and Express",
+          "Proficiency in databases like MongoDB and MySQL",
+          "Knowledge of API design",
+          "Experience with Docker and Kubernetes",
+          "Strong debugging and problem-solving skills"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "AutoFlow",
+    "logo": "https://companiesmarketcap.com/img/company-logos/256/IBE.MC.webp",
+    "location": "Detroit, MI",
+    "website": "https://autoflow.tech",
+    "industry": "Automotive Software",
+    "jobs": [
+      {
+        "id": "job-006",
+        "title": "QA Engineer",
+        "bannerImage": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
+        "location": "Detroit, MI",
+        "salary": "$60,000 - $75,000",
+        "jobType": "Full-time",
+        "description": "Test and ensure the quality of software used in next-gen vehicles.",
+        "requirements": [
+          "Experience in automated testing",
+          "Familiarity with Selenium or Cypress",
+          "Bug tracking tools knowledge",
+          "Strong documentation skills",
+          "Understanding of automotive systems"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Prosus Corp.",
+    "logo": "https://companiesmarketcap.com/img/company-logos/256/PRX.AS.webp",
+    "location": "Austin, TX",
+    "website": "https://greenleaf.io",
+    "industry": "Environmental Technology",
+    "jobs": [
+      {
+        "id": "job-002",
+        "title": "Data Analyst",
+        "bannerImage": "https://picsum.photos/seed/dataanalyst/600/200",
+        "location": "Austin, TX",
+        "salary": "$65,000 - $80,000",
+        "jobType": "Full-time",
+        "description": "Analyze environmental data to support green initiatives and sustainability strategies.",
+        "requirements": [
+          "Strong Excel and SQL skills",
+          "Experience with data visualization tools",
+          "Understanding of statistical models",
+          "Attention to detail",
+          "Strong analytical skills"
+        ]
+      },
+      {
+        "id": "job-012",
+        "title": "Environmental Engineer",
+        "bannerImage": "https://picsum.photos/seed/environment/600/200",
+        "location": "Austin, TX",
+        "salary": "$70,000 - $90,000",
+        "jobType": "Full-time",
+        "description": "Design and implement sustainable solutions for environmental issues.",
+        "requirements": [
+          "Bachelor's degree in Environmental Engineering",
+          "Experience with environmental regulations",
+          "Knowledge of water treatment systems",
+          "Project management skills",
+          "Strong communication skills"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "HealthSphere",
+    "logo": "https://companiesmarketcap.com/img/company-logos/256/0857.HK.webp",
+    "location": "Seattle, WA",
+    "website": "https://healthsphere.com",
+    "industry": "Healthcare Tech",
+    "jobs": [
+      {
+        "id": "job-003",
+        "title": "Backend Developer",
+        "bannerImage": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
+        "location": "Remote",
+        "salary": "$85,000 - $110,000",
+        "jobType": "Full-time",
+        "description": "Develop secure and scalable APIs for our health monitoring platform.",
+        "requirements": [
+          "Experience with Node.js and Express",
+          "Familiarity with MongoDB and PostgreSQL",
+          "RESTful API design",
+          "Knowledge of HIPAA compliance",
+          "Testing and deployment pipelines"
+        ]
+      },
+      {
+        "id": "job-013",
+        "title": "Frontend Developer",
+        "bannerImage": "https://picsum.photos/seed/frontend/600/200",
+        "location": "Seattle, WA",
+        "salary": "$75,000 - $95,000",
+        "jobType": "Full-time",
+        "description": "Design and implement the frontend of a new healthcare platform.",
+        "requirements": [
+          "Proficiency in React.js",
+          "Experience with responsive design",
+          "Knowledge of JavaScript, HTML5, and CSS3",
+          "Experience with Redux and state management",
+          "Good understanding of UI/UX principles"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Pfizer Solutions",
+    "logo": "https://companiesmarketcap.com/img/company-logos/256/PFE.webp",
+    "location": "New York, NY",
+    "website": "https://finixsolutions.com",
+    "industry": "Fintech",
+    "jobs": [
+      {
+        "id": "job-004",
+        "title": "Product Manager",
+        "bannerImage": "https://companiesmarketcap.com/img/company-logos/64/AMZN.webp",
+        "location": "New York, NY",
+        "salary": "$90,000 - $120,000",
+        "jobType": "Full-time",
+        "description": "Lead the development and launch of new financial tools for small businesses.",
+        "requirements": [
+          "3+ years in product management",
+          "Experience with agile methodologies",
+          "Strong communication skills",
+          "Market analysis experience",
+          "Technical background preferred"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "EduWise",
+    "logo": "https://companiesmarketcap.com/img/company-logos/256/ETN.webp",
+    "location": "Denver, CO",
+    "website": "https://eduwise.org",
+    "industry": "EdTech",
+    "jobs": [
+      {
+        "id": "job-005",
+        "title": "Content Writer",
+        "bannerImage": "https://picsum.photos/seed/contentwriter/600/200",
+        "location": "Remote",
+        "salary": "$45,000 - $60,000",
+        "jobType": "Part-time",
+        "description": "Create high-quality learning content for online courses and study material.",
+        "requirements": [
+          "Excellent written communication",
+          "Background in education or training",
+          "SEO knowledge is a plus",
+          "Deadline-oriented",
+          "Ability to explain complex topics clearly"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+/* You can style the active link here */
+.navLink-active {
+    text-decoration: underline;
+    color: blue; /* or any color of your choice */
+  }
+  

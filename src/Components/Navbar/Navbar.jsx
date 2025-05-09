@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { MdOutlineWork } from "react-icons/md";
 import { use, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthContext';
@@ -8,8 +8,10 @@ const Navbar = () => {
 
     const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
     const closeDropdown = () => setDropdownOpen(false);
+    const getLinkClass = ({ isActive }) =>
+        isActive ? 'text-primary font-semibold underline underline-offset-8' : 'text-gray-600';
     return (
-        <nav className="navbar bg-base-100 shadow-sm">
+        <nav className="navbar bg-base-100 sticky top-0 z-50 shadow-sm">
             {/* Navbar Start (Logo + Dropdown for mobile) */}
             <div className="navbar-start">
                 <div className="dropdown">
@@ -19,6 +21,7 @@ const Navbar = () => {
                         </svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/companies">Companies</Link></li>
                         <li><Link to="/jobs">All Jobs</Link></li>
@@ -40,10 +43,10 @@ const Navbar = () => {
             {/* Navbar Center (Visible on large screens) */}
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-base font-medium">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/companies">Companies</Link></li>
-                    <li><Link to="/jobs">All Jobs</Link></li>
-                    <li><Link to="/about">About Us</Link></li>
+                    <li><NavLink to="/" className={getLinkClass}>Home</NavLink></li>
+                    <li><NavLink to="/companies" className={getLinkClass}>Companies</NavLink></li>
+                    <li><NavLink to="/jobs" className={getLinkClass}>Jobs</NavLink></li>
+                    <li><NavLink to="/about" className={getLinkClass}>About Us</NavLink></li>
                 </ul>
             </div>
 
