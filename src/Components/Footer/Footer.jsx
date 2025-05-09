@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -14,13 +14,13 @@ const Footer = () => {
                         Find your dream job across multiple companies with our intuitive job tracking platform.
                     </p>
                     <div className="flex gap-4 mt-4 text-xl text-white">
-                        <a href="#" className="hover:text-orange-400 transition">
+                        <a href="https://www.facebook.com/shahriar.utchas" className="hover:text-orange-400 transition">
                             <FaFacebookF />
                         </a>
-                        <a href="#" className="hover:text-orange-400 transition">
-                            <FaTwitter />
+                        <a href="https://github.com/Shahriar-Utchas" className="hover:text-orange-400 transition">
+                            <FaGithub />
                         </a>
-                        <a href="#" className="hover:text-orange-400 transition">
+                        <a href="https://www.linkedin.com/in/shahriar-utchas" className="hover:text-orange-400 transition">
                             <FaLinkedinIn />
                         </a>
                     </div>
@@ -71,7 +71,7 @@ const Footer = () => {
 
             {/* Footer Bottom */}
             <div className="mt-10 border-t border-blue-700 pt-4 text-center text-sm text-gray-300">
-                © 2025 JobTrack. All rights reserved.
+                © 2025 JobTrack.@Shahriar Utchas- All rights reserved.
             </div>
         </footer>
     );

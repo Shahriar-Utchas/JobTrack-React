@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Home</title>
+                <title>JT | Home</title>
             </Helmet>
             <Hero />
             <div ref={companiesRef}>

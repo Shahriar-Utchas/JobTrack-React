@@ -10,9 +10,19 @@ const Login = () => {
     const { handleGoogleLogin, handleGitHubLogin } = use(AuthContext);
     const { user, SetUser, loginWithEmail } = use(AuthContext);
     const [error, setError] = useState('');
+    const [redirectMessage, setRedirectMessage] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
+
+    useEffect(() => {
+        if (location?.state) {
+            setRedirectMessage('You must log in to access that page.');
+        }
+    }, [location]);
 
 
     useEffect(() => {
@@ -79,10 +89,15 @@ const Login = () => {
     }
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
             <Helmet>
-                <title>Login</title>
+                <title>JT | Login</title>
             </Helmet>
+            {redirectMessage && (
+                <p className="text-yellow-600 text-sm text-center mb-4">
+                    {redirectMessage}
+                </p>
+            )}
             <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
                 <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Login to JobTrack</h2>
                 <form onSubmit={handleSubmit} className="space-y-5">

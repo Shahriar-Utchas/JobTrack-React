@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthContext';
 import { useNavigate } from 'react-router';
 
@@ -8,6 +8,11 @@ const UpdateProfile = () => {
     const [photoURL, setPhotoURL] = useState(user?.photoURL || '');
     const [message, setMessage] = useState('');
     const navigate = useNavigate();
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
+
 
     const handleUpdate = async (e) => {
         e.preventDefault();

@@ -10,11 +10,17 @@ import { Helmet } from 'react-helmet-async';
 const Registration = () => {
     const { user, createUser, handleGoogleLogin, handleGitHubLogin } = use(AuthContext);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
+
     useEffect(() => {
         if (user) {
             navigate('/');
         }
     }, [user, navigate]);
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
