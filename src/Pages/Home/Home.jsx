@@ -24,7 +24,7 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>JT | Home</title>
+                <title>JobTrack | Home</title>
             </Helmet>
 
             <motion.div

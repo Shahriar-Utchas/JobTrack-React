@@ -91,7 +91,7 @@ const Login = () => {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-5">
             <Helmet>
-                <title>JT | Login</title>
+                <title>JobTrack | Login</title>
             </Helmet>
             {redirectMessage && (
                 <p className="text-yellow-600 text-sm text-center mb-4">

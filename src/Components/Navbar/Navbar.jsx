@@ -127,13 +127,13 @@ const Navbar = () => {
                             <>
                                 <Link
                                     to="/login"
-                                    className="btn btn-outline btn-sm lg:btn-md transition-transform duration-300 hover:scale-105 hover:bg-blue-200 hover:text-blue-800 hover:border-blue-800"
+                                    className="btn btn-outline btn-sm lg:btn-md md:h-9 transition-transform duration-300 hover:scale-105 hover:bg-blue-200 hover:text-blue-800 hover:border-blue-800"
                                 >
                                     Login
                                 </Link>
                                 <Link
                                     to="/register"
-                                    className="btn btn-primary btn-sm lg:btn-md transition-transform duration-300 hover:scale-105 hover:shadow-md"
+                                    className="btn btn-primary btn-sm lg:btn-md md:h-9 transition-transform duration-300 hover:scale-105 hover:shadow-md"
                                 >
                                     Register
                                 </Link>

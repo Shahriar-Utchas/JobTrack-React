@@ -2,12 +2,16 @@ import React from 'react';
 import { useNavigate } from 'react-router';
 import { Ghost } from 'lucide-react';
 import Navbar from '../../Components/Navbar/Navbar';
+import { Helmet } from 'react-helmet-async';
 
 const ErrorPage = () => {
     const navigate = useNavigate();
 
     return (
         <>
+            <Helmet>
+                <title>JobTrack | 404</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 bg-white">
                 <div className="w-full max-w-md sm:max-w-xl bg-base-200 bg-opacity-5 shadow-xl rounded-2xl p-6 sm:p-10 text-center border border-primary">

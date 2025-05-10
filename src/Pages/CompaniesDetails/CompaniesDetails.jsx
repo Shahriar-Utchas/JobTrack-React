@@ -16,7 +16,7 @@ const CompaniesDetails = () => {
 
         <div className="max-w-6xl mx-auto px-4 py-8">
             <Helmet>
-                <title>JT | Companies</title>
+                <title>JobTrack | Companies</title>
             </Helmet>
             {/* Company Card */}
             <div className="bg-white rounded-xl shadow p-6 flex flex-col md:flex-row items-center gap-6 border">
