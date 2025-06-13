@@ -57,7 +57,7 @@
 ## How to Install & Run Locally
 Follow these steps to run the project on your local machine:
 
-### 1. Clone the Repository
+1. Clone the Repository
 
 ```sh
 git clone git@github.com:Shahriar-Utchas/JobTrack-React.git
